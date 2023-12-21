@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: cd3979bc01c0e8745a56630959849cb4
+guid: 2054ae6b65f27564c94fa0a290b9d25e
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -33,7 +33,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: run
+      name: run_nip
       takeName: mixamo.com
       internalID: -203655887218126122
       firstFrame: 0
@@ -544,13 +544,13 @@ ModelImporter:
         length: 0
         modified: 0
     skeleton:
-    - name: Run(Clone)
+    - name: Run_NotInPlace(Clone)
       parentName: 
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamorig:Hips
-      parentName: Run(Clone)
+      parentName: Run_NotInPlace(Clone)
       position: {x: -0.000025101304, y: 0.92635226, z: 0.0003582668}
       rotation: {x: -0.13964437, y: 0.08798794, z: -0.023368828, w: 0.98600787}
       scale: {x: 1, y: 1, z: 1}
