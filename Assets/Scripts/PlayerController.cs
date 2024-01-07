@@ -16,12 +16,11 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    // Update is called once per frame
-    void Update()
+    // Update is called once per frame{}
+    void FixedUpdate()
     {
         _animator.SetBool("IsRunning", Input.GetKey(KeyCode.UpArrow));
         _animator.SetBool("IsJumping", Input.GetKeyDown(KeyCode.Space) && isGrounded);
-
 
         if (_animator.GetBool("IsJumping")) 
         { 
@@ -39,7 +38,11 @@ public class PlayerController : MonoBehaviour
             jumpTime = 0.967f;
         }
 
-
-
     }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        Debug.Log(collision.gameObject.name);    
+    }
+
 }
